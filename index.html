@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Dynamic Page Switcher using JS</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <h1>Switch Page</h1>
+            <ul class="tabs">
+                <li class="tab is-active"><a data-switcher data-tab="1">Home</a></li>
+                <li class="tab"><a data-switcher data-tab="2">About</a></li>
+                <li class="tab"><a data-switcher data-tab="3">Contact</a></li>
+                <li class="tab"><a data-switcher data-tab="4">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pages">
+            <div class="page is-active" data-page="1">
+                <h1>Home Page</h1>
+            </div>
+            <div class="page" data-page="2">
+                <h1>About Page</h1>
+            </div>
+            <div class="page" data-page="3">
+                <h1>Contact Page</h1>
+            </div>
+            <div class="page" data-page="4">
+                <h1>Service Page</h1>
+            </div>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
